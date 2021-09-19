@@ -1,0 +1,29 @@
+.nav-link{
+    color: #000;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 1px;
+}
+.nav-link:hover{
+    color:hsl(0, 94%, 66%);
+    border:2px solid hsl(0, 94%, 66%);
+    border-radius: 5px;
+}
+.nav-link:focus{
+    background-color: hsl(0, 94%, 66%);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 12px 60px;
+    text-align: center;
+    font-weight: 700;
+}
+@media (max-width: 993px) {
+    nav.navbar:hover {
+      background: lightgray;
+    }
+    .nav-link:focus{
+        font-size: 12px;
+        font-weight: 700;
+        background-color: transparent;
+        text-align: start;}
+  }
