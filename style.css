@@ -1,18 +1,18 @@
 body{
     font-family: 'Rubik', sans-serif;
 }
-.nav-link{
+.navbar .nav-link{
     color: #000;
     font-family: 'Rubik', sans-serif;
     letter-spacing: 1px;
     font-size: 14px ;
 }
-.nav-link:hover{
+.navbar .nav-link:hover{
     color:hsl(0, 94%, 66%);
     border:2px solid hsl(0, 94%, 66%);
     border-radius: 5px;
 }
-.nav-link:focus{
+.navbar .nav-link:focus{
     background-color: hsl(0, 94%, 66%);
     color: #fff;
     border-radius: 5px;
@@ -62,17 +62,170 @@ body{
     background-color: hsl(231, 69%, 60%);
     position: absolute;
     width:35%;
-    height: 45%;
-    top:43%;
+    height: 44%;
+    top:48%;
     right:0%;
     z-index: -1;
     border-end-start-radius: 37%;
+}
+#section2 p{
+    padding: 23px 28%;
+    color:hsl(229, 8%, 60%);
+    font-size: 19px;
+}
+#section2 ul{
+    padding: 35px 25%;
+    color:hsl(229, 8%, 60%);
+}
+#section2 ul li{
+    padding-right: 45px;
+}
+#section2 .nav-link{
+    background-color: white;
+    border: 2px solid hsl(231, 69%, 60%);
+    color: hsl(231, 69%, 60%);
+}
+#section2 .nav-link:active{
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+}
+#tab1 p{
+   padding:0;
+   margin-top: 27px;
+}
+#tab1 button{
+    background-color: hsl(231, 69%, 60%);
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    padding: 10px 20px;
+}
+#section2{
+    position: relative;
+}
+#tab-img{
+        background-color: hsl(231, 69%, 60%);
+        position: absolute;
+        width:38%;
+        height: 325px;
+        top:480px;
+        left:0%;
+        z-index: -1;
+        border-bottom-right-radius: 35%;
+}
+#card-sec{
+    margin-top: 200px;
+}
+#card-sec .row{
+    padding-left: 18%;
+    padding-right: 18%;
+}
+#card-sec .card img{
+    margin-left: 80px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+#card-sec .card{
+    box-shadow: 0 0 15px 0 rgb(170, 170, 170);
+    background-image: url(images/bg-dots.svg);
+    background-repeat: no-repeat;
+    background-position-y: 77%;
+}
+#card-sec p{
+    padding-left: 29%;
+    padding-right: 29%;
+    color:hsl(229, 8%, 60%);
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+#card-sec .card p{
+    font-size: 15px;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+#card-sec .card a{
+    background-color: hsl(231, 69%, 60%);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 12px 35px;
+}
+#card-sec .card a:hover{
+    background: transparent;
+    color:hsl(231, 69%, 60%);
+    border: 2px solid hsl(231, 69%, 60%);
+}
+#questions .container{
+    padding-left: 30%;
+    padding-right: 30%;
+}
+#questions h1{
+    margin-top: 90px;
+    font-size: 30px;
+}
+#questions p{
+    color: hsl(229, 8%, 60%);
+    font-size: 17px;
+    margin-bottom: 60px;
+}
+#questions .accordion-button{
+    font-weight: 500;
+}
+#questions .btn{
+    font-size: 12px;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    padding:10px 25px;
+}
+#questions .accordion-button{
+    border-top: 1px thin grey;
+}
+#questions .accordion-button:hover{
+    color:hsl(0, 94%, 66%);
+}
+#questions .accordion-button:active{
+    border:none;
+    box-shadow: none;
+    background-color: transparent;
+}
+#questions .accordion-body{
+    color: hsl(229, 8%, 60%);
+}
+#section3{
+    background-color: hsl(231, 69%, 60%);
+    padding: 5% 33%;
+}
+#section3 p{
+    letter-spacing: 3px;
+}
+#section3 h2{
+    padding-top: 8px;
+    padding-bottom: 20px;
+}
+#section3 input{
+    padding: 8px 85px 8px 8px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+}
+#section3 input:focus{
+   border: 2px solid hsl(0, 94%, 66%);
+}
+#section3 button{
+    background-color: hsl(0, 94%, 66%);
+    color:white;
+    font-size: 13px;
+    padding: 10px 25px;
+}
+#section3 button:active{
+    background-color: white;
+    color:hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 94%, 66%);
 }
 @media (max-width: 1025px) {
     nav.navbar:hover {
       background: lightgray;
     }
-    .nav-link:focus{
+    .navbar .nav-link:focus{
         font-size: 12px;
         font-weight: 700;
         background-color: transparent;
@@ -81,8 +234,8 @@ body{
         background-color: hsl(231, 69%, 60%);
         position: absolute;
         width:40%;
-        height: 40%;
-        top:30%;
+        height: 250px;
+        top:300px;
         right:0%;
         z-index: -1;
         border-end-start-radius: 35%;
@@ -127,8 +280,8 @@ body{
         background-color: hsl(231, 69%, 60%);
         position: absolute;
         width:40%;
-        height: 30%;
-        top:30%;
+        height:180px;
+        top:300px;
         right:0%;
         z-index: -1;
         border-end-start-radius: 35%;
@@ -139,8 +292,8 @@ body{
         background-color: hsl(231, 69%, 60%);
         position: absolute;
         width:70%;
-        height: 29%;
-        top:20%;
+        height: 175px;
+        top:215px;
         right:0%;
         z-index: -1;
         border-end-start-radius: 35%;
@@ -177,11 +330,98 @@ body{
         background-color: hsl(231, 69%, 60%);
         position: absolute;
         width:70%;
-        height: 22%;
-        top:19.5%;
+        height: 155px;
+        top:200px;
         right:0%;
         z-index: -1;
         border-end-start-radius: 35%;
     }
-  }
- 
+    #section2 p{
+        padding: 0px 35px;
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+    #section2 ul{
+        padding: 12px;
+        margin-top: 10px;
+    }
+    #section2 ul li{
+        padding-right: 0px;
+    }
+    #section2 ul li button{
+        font-size: 10px;
+        padding:6px 60px;
+        margin-bottom: 10px;
+    }
+    #tab1 h2{
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom:0;
+        margin-top: 60px;
+    }
+    #tab1 p{
+        font-size: 14px;
+        margin-top: 8px;
+        padding:0;
+    }
+    #tab-img{
+        position: absolute;
+        width:75%;
+        height: 170px;
+        top:365px;
+        left:0%;
+        border-bottom-right-radius: 35%;}
+   #card-sec{
+     margin-top: 100px;
+}
+#card-sec h2{
+    font-size: 20px;
+}
+#card-sec p{
+    font-size: 14px;
+    margin: 8px 0 0;
+    padding: 0 30px;
+}
+#card-sec .card{
+    margin-top: 20px;
+}
+#card1{
+    margin-bottom: 25px;
+}
+#card-sec .row{
+   padding-left: 50px;
+}
+#questions .container{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+#questions h1{
+        font-size: 25px;
+}
+#questions p{
+    font-size: 13px;
+    line-height: 23px;
+}
+#questions .accordion-button{
+    font-size: 11px;
+}
+#section3{
+    padding: 40px 20px;
+}
+#section3 p{
+    font-size: 12px;
+}
+#section3 h2{
+    font-size: 22px;
+}
+#section3 input{
+    padding: 8px 18px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+}
+#section3 button{
+    font-size: 13px;
+    padding: 10px 25px;
+}
+}
